@@ -6,7 +6,7 @@ var fs = require("fs");
 
 // Express app
 var app = express();
-var PORT = 3000;
+var PORT = process.env.PORT || 3000;
 
 // data parsing
 app.use(bodyParser.urlencoded({ extended: false }));
